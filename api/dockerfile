@@ -1,0 +1,13 @@
+FROM node:10
+
+WORKDIR /var/todo/application
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3333
+
+CMD [ "npm", "run", "server:start" ]

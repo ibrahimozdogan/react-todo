@@ -1,0 +1,16 @@
+{
+  "name": "Todo Project Api",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node_modules/nodemon/bin/nodemon.js src/index.js",
+    "test": "jest --coverage --config=jest.config.js"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "jest": "24.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "author": "Halil Ibrahim Ozdogan"
+}
