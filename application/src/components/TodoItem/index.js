@@ -1,5 +1,5 @@
 import React from 'react';
-import { UPDATE_TODO_URL, COLOR_OPTIONS, TODO_STATUSES } from '../../enums';
+import { UPDATE_TODO_URL, DELETE_TODO_URL, COLOR_OPTIONS, TODO_STATUSES } from '../../enums';
 import Button from '../Ui/Button';
 import SelectBox from '../Ui/SelectBox';
 import TextArea from '../Ui/TextArea';
@@ -41,7 +41,7 @@ class TodoItem extends React.Component {
     }
 
     async delete () {
-        const response = await fetch(UPDATE_TODO_URL.replace('{id}', this.state.id), { method: 'delete' });
+        const response = await fetch(DELETE_TODO_URL.replace('{id}', this.state.id), { method: 'delete' });
         const { status } = await response.json();
 
         if (status) {
@@ -52,7 +52,7 @@ class TodoItem extends React.Component {
     /**
      * @param {string} payload
      */
-    changeProperty (payload) {console.log(payload);
+    changeProperty (payload) {
         this.setState(payload);
         this.update(payload)
     }

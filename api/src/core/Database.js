@@ -6,6 +6,9 @@ class Database {
         this.connection = null;
     }
 
+    /**
+     * @returns {mongoose.connection}
+     */
     connect () {
         if (!this.connection) {
             mongoose.connect(`mongodb://${HOST}:${PORT}/${DATABASE_NAME}`, { useNewUrlParser: true });

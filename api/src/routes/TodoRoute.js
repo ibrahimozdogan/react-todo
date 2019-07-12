@@ -1,4 +1,4 @@
-const { isNull, isEmptyString } = require('../functions/index');
+const { isNull } = require('../functions/index');
 const TodoRepository = require('../repositories/TodoRepository');
 
 module.exports = function (route) {

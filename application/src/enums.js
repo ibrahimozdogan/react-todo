@@ -2,6 +2,7 @@ export const API_URL = 'http://localhost:3333';
 export const FETCH_TODO_URL = `${API_URL}/todo`;
 export const ADD_TODO_URL = FETCH_TODO_URL;
 export const UPDATE_TODO_URL = `${API_URL}/todo/{id}`;
+export const DELETE_TODO_URL = UPDATE_TODO_URL;
 
 export const COLOR_OPTIONS = [{
     value: 'red',
