@@ -12,3 +12,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+.todo-list {
+    max-height: 600px;
+    overflow: scroll;
+}
