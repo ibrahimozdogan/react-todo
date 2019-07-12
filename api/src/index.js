@@ -1,19 +1,18 @@
-var express = require('express');
-var userBaseVisitCount = 0;
-
-const PORT = 3333;
+const express = require('express');
+const bodyParser = require('body-parser');
+const Database = require('./core/Database');
+const Routes = require('./core/Routes');
+const { PORT } = require('./enums/CommonEnums');
 
 const app = express();
+new Database().connect();
 
-app.get('/', (request, response) => {
-    userBaseVisitCount++;
-    response.send('sa');
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
 });
-
-app.get('/get-count', (request, response) => {
-    response.send('count:' + userBaseVisitCount);
-});
-
+app.use(bodyParser.json());
+app.use('/', Routes);
 app.listen(PORT);
-
-console.log('tehlasdasiasdaske');

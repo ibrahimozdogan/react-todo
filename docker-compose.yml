@@ -1,22 +1,25 @@
 version: '3'
 services:
   api:
+    container_name: api
     build: ./api
     ports:
       - "3333:3333"
     volumes:
-      - ./api:/var/todo/api/src
+      - ./api/src:/var/todo/src
+    links:
+      - mongodb
   application:
+    container_name: application
     build: ./application
     ports:
       - "3000:3000"
     volumes:
-      - ./application:/var/todo/application/src
+      - ./application/src:/var/todo/src
+    links:
+      - api
   mongodb:
-    image: "mongo"
-    restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: ibrahim
-      MONGO_INITDB_ROOT_PASSWORD: 123456
+    container_name: mongodb
+    image: mongo
     ports:
       - "27017:27017"

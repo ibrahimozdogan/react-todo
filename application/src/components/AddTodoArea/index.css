@@ -1,0 +1,29 @@
+.add-todo {
+    background: #9b59b6;
+    display: flex;
+    padding-left: 10px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: -50px;
+}
+
+.add-todo.color-red {
+    background: #e74c3c;
+}
+
+.add-todo.color-blue {
+    background: #3498db;
+}
+
+.add-todo.color-orange {
+    background: #d35400;
+}
+
+.add-todo.color-yellow {
+    background: #f39c12;
+}
+
+.add-todo .button {
+    width: 20%;
+}

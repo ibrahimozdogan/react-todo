@@ -1,14 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import TodoContainer from './components/TodoContainer'
+import './App.css';
 
-const App = () =>(
-    <div>
-        Hello world!!!!!!!!!!!!!!!!!!!!!!!!!!
+function App() {
+  return (
+    <div className="App">
+      <TodoContainer />
     </div>
-);
+  );
+}
 
-
-ReactDOM.render(
-    <App/>,
-    document.getElementById('app')
-);
+export default App;

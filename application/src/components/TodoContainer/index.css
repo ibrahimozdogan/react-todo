@@ -1,0 +1,14 @@
+.todo-container {
+    width: 600px;
+    height: 600px;
+    background: #ecf0f1;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.todo-container .header {
+    display: flex;
+    justify-content: space-between;
+}
