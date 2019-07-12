@@ -5,8 +5,8 @@
 }
 
 .todo-item.color-red {
-    background: #e74c3c;
-}
+     background: #e74c3c;
+ }
 
 .todo-item.color-blue {
     background: #3498db;
@@ -18,6 +18,17 @@
 
 .todo-item.color-yellow {
     background: #f39c12;
+}
+
+.todo-item.completed:before {
+    width: 18px;
+    position: absolute;
+    height: 18px;
+    content: ' ';
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACJ0lEQVRYR+3Xuc8NYRTH8c8bO50lKDQqe0IhsSTWEKLyByhsnegUtoY/QBQaS0RPq7HGTiwljZYCJYWC/JK5b27GzJ2Ze+V9IzHlM8+c3/ec53eee+6YSX7GJlnfPwewDvuxGcswr6jgF3zAY9zE27aVbVuB7TiPDS0DP8Vp3G/a3wQwGxdxkM7H9QvXcAw/6kAGAczFbaxvyqLh/UvswbeqfXUAyTzlG1W8pxmIrVWVqAO4gkMjZl7+PDGPlBerAGK4O0OceRNvPLGjbMwqgDi4rdubRMvvE3tT/2IZIH3+umvU0v5nuI5LmFIRKxrj90QZIL1+agSA59iNOXiBJRWxonGmt14GeIAtQwJEMOKzcA/La+JEY1sdwGcsHAIgbbYLMwuT1YkndDQW1wH8xNSOAK8K8RlF5isavo/G9K4AH3EAN7C0TyCG3VkETNlXtoAfCPAJiyqCPMRezC9KHIg3hfg03MWqFuKNRzDIhLma9xUQF3C4aLNk3lY8AANN2NSGPYjvWFBkvrpl5r1t53C2zgNri9IOihmIE7iKNR3Fsz0a7+oAsv4EG4cI3OaTxqs4QXJJxFRNw0obwf49+TFK7Bh6/JnIn+PLOFqmrgPIdRq3/q2BJNd0sv9jNJuIkSziuUM6jWS9SqUSGUozHXX1RM48U9DxYYfS/uNK+XJHtO2OuP1k2XBVru2aVXq46o/JV7zHI9zq7/OmVukK0BSv8/v/AL8BSqlgIQtX1uQAAAAASUVORK5CYII=);
 }
 
 .todo-item .button {

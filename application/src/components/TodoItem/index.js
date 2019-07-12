@@ -62,7 +62,7 @@ class TodoItem extends React.Component {
      */
     render() {
         return (
-            <div className={`todo-item color-${this.state.color}`}>
+            <div className={`todo-item color-${this.state.color} ${this.state.status === 3 && 'completed'}`}>
                 <SelectBox
                     selectedValue={this.state.status}
                     options={TODO_STATUSES}
