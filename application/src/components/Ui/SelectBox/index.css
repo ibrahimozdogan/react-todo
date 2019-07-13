@@ -1,9 +1,13 @@
 .select-box {
-    color: black;
+    color: white;
     cursor: pointer;
     font-size: 14px;
     background: transparent;
     font-weight: bold;
     border: none;
     max-width: 70px;
+}
+
+.select-box option {
+    color: black;
 }
