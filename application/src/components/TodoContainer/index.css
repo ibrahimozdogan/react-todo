@@ -1,6 +1,5 @@
 .todo-container {
-    width: 600px;
-    height: 600px;
+    width: 90%;
     background: #ecf0f1;
     position: fixed;
     transform: translate(-50%, -50%);
@@ -14,6 +13,6 @@
 }
 
 .todo-list {
-    max-height: 600px;
+    height: 400px;
     overflow: scroll;
 }
