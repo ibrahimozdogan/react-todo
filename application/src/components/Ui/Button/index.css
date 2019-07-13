@@ -1,6 +1,7 @@
 .button {
-    background: #1abc9c;
-    padding: 5px;
-    color: white;
+    width: 134px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #0cbbef;
     cursor: pointer;
 }

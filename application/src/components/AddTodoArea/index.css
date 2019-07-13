@@ -1,11 +1,12 @@
 .add-todo {
     background: #9b59b6;
     display: flex;
-    padding-left: 10px;
     height: 50px;
     position: absolute;
     right: 0;
-    top: -50px;
+    top: -60px;
+    padding: 5px;
+    align-items: center;
 }
 
 .add-todo.color-red {

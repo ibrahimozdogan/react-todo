@@ -1,18 +1,23 @@
 .todo-container {
     width: 90%;
-    background: #ecf0f1;
     position: fixed;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
+    max-width: 700px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 0 #e5e9f2;
+    border: solid 1px #e5e9f2;
+    background-color: #ffffff;
 }
 
 .todo-container .header {
     display: flex;
     justify-content: space-between;
+    padding: 5px;
 }
 
 .todo-list {
     height: 300px;
-    overflow: scroll;
+    overflow: auto;
 }
