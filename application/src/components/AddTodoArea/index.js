@@ -44,7 +44,11 @@ class AddTodoArea extends React.Component {
     render() {
         return (
             <div className={`add-todo color-${this.state.color}`}>
-                <TextArea value={this.state.content} change={content => this.changeProperty.call(this, { content }) } />
+                <TextArea
+                    placeholder="Yapılacak iş bilgisini giriniz..."
+                    value={this.state.content}
+                    change={content => this.changeProperty.call(this, { content }) }
+                />
                 <SelectBox
                     selectedValue={this.state.color}
                     options={COLOR_OPTIONS}

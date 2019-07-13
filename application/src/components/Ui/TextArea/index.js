@@ -9,6 +9,7 @@ class TextArea extends React.Component {
         super(props);
         this.state = {
             value: this.props.value,
+            placeholder: this.props.placeholder || ''
         };
     }
 
@@ -28,6 +29,7 @@ class TextArea extends React.Component {
     render() {
         return (
             <textarea
+                placeholder={this.state.placeholder}
                 className="text-input"
                 onChange={this.change.bind(this)}
                 value={this.state.value}
